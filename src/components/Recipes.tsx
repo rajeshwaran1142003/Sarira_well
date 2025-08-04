@@ -61,12 +61,7 @@ const Recipes = () => {
                     }}
                   />
                 ) : null}
-                <div 
-                  className={`w-full h-full flex items-center justify-center ${recipe.image.startsWith('/') ? 'hidden' : 'flex'}`}
-                  style={{ display: recipe.image.startsWith('/') ? 'none' : 'flex' }}
-                >
-                  <span className="text-5xl sm:text-6xl">{recipe.image.startsWith('/') ? '🥛' : recipe.image}</span>
-                </div>
+                <span className="text-5xl sm:text-6xl">{recipe.image.startsWith('/') ? '🥛' : recipe.image}</span>
               </div>
 
               {/* Recipe Content */}
