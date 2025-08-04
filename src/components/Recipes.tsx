@@ -49,21 +49,6 @@ const Recipes = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Recipe Image */}
-              <div className="h-48 sm:h-56 bg-gradient-to-br from-[#E38A30]/20 to-[#364A22]/20 flex items-center justify-center overflow-hidden relative">
-                {recipe.image.startsWith('/') ? (
-                  <img 
-                    src={recipe.image} 
-                    alt={recipe.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling.style.display = 'flex';
-                    }}
-                  />
-                ) : null}
-                <span className="text-5xl sm:text-6xl">{recipe.image.startsWith('/') ? '🥛' : recipe.image}</span>
-              </div>
-
               {/* Recipe Content */}
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-semibold text-[#364A22] mb-2">
