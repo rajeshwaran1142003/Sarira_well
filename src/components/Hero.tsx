@@ -5,8 +5,6 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-green-50 flex items-center justify-center relative overflow-hidden pt-16 md:pt-20">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-amber-50/90 to-green-50/80"></div>
-      
       {/* Decorative Background Elements */}
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute top-20 left-4 sm:left-10 w-16 h-16 sm:w-32 sm:h-32 border border-[#E38A30] rounded-full animate-pulse"></div>
